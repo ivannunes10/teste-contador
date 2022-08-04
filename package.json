@@ -3,7 +3,7 @@
   "version": "2.0.3",
   "scripts": {
     "ng": "ng",
-    "start": "node index.js",
+    "start": "node server.js",
     "start-local": "ng serve --host 0.0.0.0 --port 80 --disable-host-check --configuration=local",
     "start-test": "ng serve --configuration=test",
     "start-hmg": "ng serve --configuration=hmg",
