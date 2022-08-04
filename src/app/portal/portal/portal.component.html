@@ -21,7 +21,7 @@
     <div class="lista-paineis-content" column>
 
 
-      <!-- <div class="grid-list" id="conteudo" isFocusable *ngIf="paineisDataSource.filteredData.length != 0">
+      <div class="grid-list" id="conteudo" isFocusable *ngIf="paineisDataSource.filteredData.length != 0">
           <mat-card cdkMonitorSubtreeFocus class="painel-card" *ngFor="let painel of paineisDataSource.filteredData" id="{{painel.titulo}}" [routerLink]="[painel.id]" (keypress)="irPainel($event)">
             <mat-card-header class="header">
               <mat-card-title><h3 [attr.aria-label]="painel.titulo" aria-hidden="false">{{ painel.titulo | slice:0:45 }}{{ painel.titulo.length > 45 ? '...' : '' }}</h3></mat-card-title>
@@ -35,9 +35,9 @@
           </mat-card>
       </div>
 
-      <hr id="barrinha"> -->
+      <hr id="barrinha">
 
-      <div class="grid-list" id="conteudo" isFocusable *ngIf="dataGrafana.length != 0">
+      <!-- <div class="grid-list" id="conteudo" isFocusable *ngIf="dataGrafana.length != 0">
         <mat-card cdkMonitorSubtreeFocus class="painel-card" *ngFor="let dash of multipleDetails" id="{{dash.dashboard.title}}" [routerLink]="['/dash', dash.dashboard.uid+ '@@' + dash.meta.url + '&' + dash.dashboard.title]" (keypress)="irPainel($event)">
           <mat-card-header class="header">
             <mat-card-title><h3 [attr.aria-label]="dash.dashboard.title" aria-hidden="false">{{ dash.dashboard.title | slice:0:60 }}</h3></mat-card-title>
@@ -49,7 +49,7 @@
             <div class="autor"><span>Publicado por {{ dash.meta.updatedBy | slice:0:50}} </span></div>
           </div>
         </mat-card>
-      </div>
+      </div> -->
 
 
       <div class="sem-resposta" *ngIf="paineisDataSource.filteredData.length == 0 && dataGrafana.length == 0">
