@@ -42,6 +42,7 @@ export class GrafaPainelComponent implements OnInit {
     this.DetailsGrafana.getDescription(this.uid).subscribe(data=>{
       this.description.push(data)
     })
+    document.title = this.title
     
     
   }

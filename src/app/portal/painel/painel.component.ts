@@ -48,6 +48,7 @@ export class PainelComponent implements OnInit, OnInit, OnChanges {
         (mainHeader as HTMLElement).focus();
       }
     });
+    document.title = this.painel.titulo
   }
 
   ngOnChanges(e){

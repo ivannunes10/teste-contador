@@ -73,7 +73,7 @@ export class PortalComponent implements OnInit {
 
   async ngOnInit() {
     
-
+    document.title = "Observatório Municipal da Pessoa com Deficiência"
 
     var bench = document.getElementById('bench')
     if (bench.style.backgroundColor === 'black') {

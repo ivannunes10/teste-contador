@@ -18,6 +18,7 @@ export class MapaServicosComponent implements OnInit {
   constructor (private acessibilityBarComponent: AcessibilityBarComponent) {}
 
   ngOnInit(): void {    
+    document.title = "Observatório Municipal da Pessoa com Deficiência"
     var bench = document.getElementById('bench')
     if (bench.style.backgroundColor === 'black') {
       for (let div of this.divsArray){
